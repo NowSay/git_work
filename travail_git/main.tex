@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage[
+   backend=biber,        % compilateur par défaut pour biblatex
+   sorting=nyt,          % trier par nom, année, titre
+   citestyle=authoryear, % style de citation auteur-année
+   bibstyle=alphabetic,  % style de bibliographie alphabétique
+]{biblatex}
+\usepackage{algorithm}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{algorithmic}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\title{Artificial Intelligence}
+\author{Théo Lemaire }
+\date{April 2022}
+\bibliographystyle{plain}
+\bibliography{database.bib}
+
+\begin{document}
+\pagestyle{fancy}
+\maketitle
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics{IA.png}
+\label{Tux}
+\end{figure}
+
+\tableofcontents
+\listoffigures
+\newpage
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[C]{\textbf{Page \thepage}} 
+\fancyhead[L]{}
+\fancyhead[R]{IA Intelligence}
+
+\section{Introduction}
+\subsection{1- Qu'est-ce que l’AI et de quoi est-elle composée ?
+}
+\text{Le terme d’IA est apparut en 1956.
+Quand on parle d’IA, on discute de tout ce qui est délégable en termes de décisions et de responsabilités à une machine ou à un ordinateur. 
+Toute intelligence artificielle doit fonctionner à partir d’un programme mère, d’un algorithme capable de détecter notre volonté et ainsi d’adapter au mieux son action en adéquation avec nos besoins.
+Avant tout, quelques illustrations du potentiel d’une IA, battre le meilleur joueur d'échecs au monde, reconnaître des espèces rares sur une vidéo ou une série d’images, identifier un visage, bluffer à des parties de poker… Celà peut effectivement paraître impressionnant, celà pourrait même conduire à une certaine réflexion quant à l’éventuelle supériorité de celle-ci quant à l'être humain.
+Réflexion qui est tout à fait fondée, du moins sur le plan factuel, nous ne pouvons négliger la puissance du cerveau humain quand à sa diversité d’action et sa capacité d’adaptation, une intelligence artificielle est destinée à être créée pour un usage bien spécifique, là où elle serait totalement incappable de faire autre chose que ce pour quoi elle a étée créée.
+Ainsi se pose la question de jusqu'où une IA peut-elle performer ?
+}
+
+\subsection{Les limites de celle-ci}
+
+\text{Ici nous noterons un changement majeur quand à la manière dont nous travaillions avec l’IA, effet, avant les années 1980, nous nous contentions de travailler en programmant et en codant chaque éventualités afin de celle-ci puisse répondre à chaque question posée, à chaque situation, nous ne faisions que programmer en sachant ce qu’il allait se passer, en anticipant chaque éventualités, ainsi, l’intelligence artificielle n’avait que peux d’utilité et ne se limitait qu'à son usage dit “spectacle”, afin de montrer les progrès technologiques. Nous pouvons citer le premier robot mobile ‘Shakey The Robot’ développé à Stanford, celui-ci se limitait aux fonctions décrites précédemment.
+
+Dans les années 1980, ce temps fut révolu, en effet, un nouveau concept révolutionne le domaine de l’IA, et redonnera de l'intérêt vers cette cause, ce n’est d’autre que le concept du “Réseau de neurones évolutif ou Deep Learning”, celui-ci s'imprègne du fonctionnement même d’un cerveau humain, son fonctionnement est basé sur un réseau de neurones indépendantes qui apprennent de leurs erreurs et qui ainsi créent l'intelligence en elle même, nous ne sommes plus en train d’anticiper chaque situation, l’IA le fait à notre place, bien sûr, celà était uniquement dans un domaine précis. 
+Ce concept permet à l’IA d’apprendre de ses erreurs, et ainsi de les éviter, c’est ainsi qu’en 1997, le superordinateur Deep Blue (IBM) bat le champion Garry Kasparov aux échecs, là où l'être humain mettait du temps à réfléchir ou placer ses pions, la machine avait déjà anticipée toutes les possibilités. Ainsi la cause de l’IA prend de l’ampleur pour le grand public.
+}
+
+\subsection{Peux-on faire confiance a une IA ?}
+
+
+\text{Le concept de l’intelligence artificielle s’est ainsi démocratisé dans le monde d’aujourd’hui, il est partout, dans nos smartphones, dans nos ordinateurs, dans notre voiture, dans les villes, dans les caméras de surveillances..
+
+Nous pouvons ainsi nous poser la question d’une mauvaise utilisation de celle-ci, ou du moins une utilisation éthiquement incorrecte et ou l’on violerait les droits de chacuns, prenons par exemple le programme PRISM, développé par les USA après les attentats des tours jumelles en 2011, et dénoncé par le lanceur d’alertes Edward Snowden, celui-ci était chargé d’écouter, analyser et faire remonter chacuns des comportements suspects de la population américaine, à travers des caméras de téléphone, des conversations téléphoniques, des messages SMS, ou encore des emails. Ce programme à sucité une question éthique quant à l’utilisation des données personnelles par l’IA à des fins de sécurité nationale, revendiquant la liberté d’expression et la liberté du privé.
+}
+
+\section{Quest-ce qu'un neurone ?}
+
+\subsection{Neuronne Formel}
+
+\begin{itemize}
+    \item Des entrées (notées x)
+    \item Une sortie (notée y)
+    \item Des paramètres (notés w et b)
+\end{itemize}
+
+\text{Le fonctionnement d'un neuronne dit "formel"* est représenté par les équations suivantes. (Le neuronne formel est celui-ci qui s'inspire le plus du neuronne biologique)}
+\footnote{Neurone formel: neurone fonctionnement basiquement avec uniquement une entrée et une sortie}
+\begin{equation}
+   Y = f(<w,x>+b)
+\end{equation}
+
+\begin{equation}
+   f(x) = max(0,x)
+\end{equation}
+
+
+
+\textit{source \cite{openclassroom}}
+
+\subsection{Réseau de neurones}
+
+\text{La mise en place mathématique d'un neuronne
+est tout droit tirée de la biologie humaine, il faut bien comprendre que ceux-ci fonctionnent en groupe, plus précisément en réseau. Pour cela, il faut que les neuronnes communiquent, dans le domaine de la biologie on parle de synapses, dans l'informatique on parle de sorties qui mènent directement à une entrée d'autre neurones.}
+\newpage
+\subsection{Composants du réseau}
+\text{Un réseau de neuronnes est principalement composé de 3 éléments. Ils doivent etre préalablement définis pour coder le réseau, ce sont des prérequis.}
+
+\begin{itemize}
+    \item La constitution d'une base de données d'images qui servira à l'entraînement et à l'évaluation du réseau
+    \item Le choix d'une architecture de réseau de neurones
+    \item L'entraînement du réseau à partir de la base de données.
+\end{itemize}
+
+\textit{source \cite{openclassroom}}
+
+\begin{algorithm}
+\caption{Comportement d'un neurone}
+\begin{algorithmic}
+\IF{Condition remplie}
+
+\STATE Connecter à l'entrée d'un autre neurone
+\ELSE
+\STATE Connecter à la sortie du neurone
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\end{document}
